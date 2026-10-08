@@ -1,5 +1,6 @@
 // Стек: последним добавили — первым удалили.
-function stack(arr, add, exit = 0) {
+function stack(arr, add, exit = 0)
+ {
     if (exit != 0)
          {       
         arr.pop();        // Удаляем последний элемент массива.
