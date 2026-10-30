@@ -1,22 +1,25 @@
 //Задача 2: Напишите функцию, которая выполняет бинарный поиск в массиве положительных чисел.
 //Функция возвращает индекс искомого элемента, в случае если не находит - возвращает -1.
-function binarySearch(arr, target) {
+function binarySearch(arr, target)
+{
     let left = 0;
     let right = arr.length - 1;
-
-    while (left <= right) {
+    while (left <= right)
+    {
         const mid = Math.floor((left + right) / 2);
-        if (arr[mid] == target) {
+        if (arr[mid] == target) 
+        {
             return mid;
         }
-        if (arr[mid] > target) {
+        if (arr[mid] > target)
+        {
             right = mid - 1;
         }
-        else {
+        else 
+        {
             left = mid + 1;
         }
     }
-
     return -1;
 }
 const numbers = [2, 4, 6, 8, 10, 12, 14, 16];
